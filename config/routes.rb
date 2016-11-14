@@ -4,4 +4,11 @@ Rails.application.routes.draw do
       resources :contents, only: [:create]
     end
   end
+
+  resources :users, only: :none do
+    collection do
+      get 'sign_in' => 'sessions#new'
+      post 'sign_in' => 'sessions#create'
+    end
+  end
 end
