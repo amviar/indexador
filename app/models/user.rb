@@ -1,5 +1,6 @@
 class User
   include Mongoid::Document
+  include Mongoid::Timestamps
   include Sorcery::Model
 
   authenticates_with_sorcery!
