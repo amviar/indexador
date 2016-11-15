@@ -11,4 +11,6 @@ Rails.application.routes.draw do
       post 'sign_in' => 'sessions#create'
     end
   end
+
+  root to: 'home#index'
 end
