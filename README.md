@@ -1,24 +1,8 @@
-# README
+# Vagrant VM setup
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+1. Instalar VirtualBox (https://www.virtualbox.org/wiki/Downloads)
+1. Instalar Vagrant (https://www.vagrantup.com/downloads.html)
+1. Instalar berkshelf: `gem install berkshelf --no-ri --no-rdoc`
+1. Instalar plugin de vagrant vagrant-omnibus: `vagrant plugin install vagrant-omnibus`
+1. Instalar cookbooks: `berks vendor cookbooks`
+1. Generar la VM: `vagrant up`
