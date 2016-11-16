@@ -12,7 +12,7 @@ Rails.application.routes.draw do
     end
   end
 
-  resource :feed, only: [:show]
+  resources :feeds, only: [:index]
 
   root to: 'home#index'
 end

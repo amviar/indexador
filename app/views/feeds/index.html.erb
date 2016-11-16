@@ -1,0 +1,13 @@
+<h1>Contenido para <%= Date.today.strftime('%d/%m/%Y') %></h1>
+
+
+<% @contents.each do |content| %>
+  <div style="border-bottom: 1px solid black;padding: 6px;">
+    <h3><a href="<%= content.url %>"><%= content.title %></a></h3>
+    <div style="font-weight: 700; padding-bottom: 10px;">
+      <span>Publicado por: <%= content.creator %> (<%= content.published_at.strftime('%d/%m/%Y a las %H:%M') %>)</span><br/>
+      <span>Fuente: <%= content.source %></span>
+    </div>
+    <%= raw content.body %>
+  </div>
+<% end %>
