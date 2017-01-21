@@ -36,5 +36,5 @@ end
 
 # AuthN / AuthZ
 gem 'sorcery'
-# gem 'doorkeeper'
-# gem 'doorkeeper-mongodb', github: 'doorkeeper-gem/doorkeeper-mongodb'
+gem 'doorkeeper'
+gem 'doorkeeper-mongodb', git: 'https://github.com/michaeltrimm/doorkeeper-mongodb'

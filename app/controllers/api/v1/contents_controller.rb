@@ -1,4 +1,6 @@
 class Api::V1::ContentsController < ActionController::Base
+  before_action :doorkeeper_authorize!
+
   def create
     @content = Content.new(content_params)
 
