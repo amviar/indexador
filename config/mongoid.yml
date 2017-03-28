@@ -141,3 +141,16 @@ test:
         read:
           mode: :primary
         max_pool_size: 1
+
+staging:
+  clients:
+    default:
+      database: indexador_staging
+      hosts:
+        - <%= ENV['MONGODB_HOST'] %>
+production:
+  clients:
+    default:
+      database: indexador_production
+      hosts:
+        - <%= ENV['MONGODB_HOST'] %>

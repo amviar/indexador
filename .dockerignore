@@ -1,0 +1,14 @@
+.git
+.vagrant
+cookbooks
+doc
+site-cookbooks
+log
+test
+tmp
+vagrant_shared
+.byebug_history
+.ruby*
+Berksfile*
+README.md
+Vagrantfile
