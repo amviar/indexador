@@ -1,8 +1,4 @@
-# Vagrant VM setup
+# Docker setup para desarrollo
 
-1. Instalar VirtualBox (https://www.virtualbox.org/wiki/Downloads)
-1. Instalar Vagrant (https://www.vagrantup.com/downloads.html)
-1. Instalar berkshelf: `gem install berkshelf --no-ri --no-rdoc`
-1. Instalar plugin de vagrant vagrant-omnibus: `vagrant plugin install vagrant-omnibus`
-1. Instalar cookbooks: `berks vendor cookbooks`
-1. Generar la VM: `vagrant up`
+1. Construir la imagen: `docker build . -t indexador`
+1. Correr el container: `docker run  -i -t --rm -p 3030:3000 --env 'MONGODB_HOST=<IP asignado a interfaz docker0>:27017' indexador`
